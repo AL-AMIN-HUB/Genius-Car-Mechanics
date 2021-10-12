@@ -1,24 +1,28 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <Navbar sticky="top" bg="light" expand="lg">
+      <Navbar sticky="top" bg="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand className="text-success fs-4 fw-bold">CAR MECHANICS</Navbar.Brand>
+          <Navbar.Brand className="text-warning fs-4 fw-bold">CAR MECHANICS</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link className="fs-4 text-muted" href="#banner">
+              <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#banner">
                 Home
-              </Nav.Link>
-              <Nav.Link className="fs-4 text-muted" href="#services">
+              </NavLink>
+              <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#services">
                 Services
-              </Nav.Link>{" "}
-              <Nav.Link className="fs-4 text-muted" href="#experts">
+              </NavLink>{" "}
+              <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#experts">
                 Experts
-              </Nav.Link>
+              </NavLink>
+              <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/login">
+                Login
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
