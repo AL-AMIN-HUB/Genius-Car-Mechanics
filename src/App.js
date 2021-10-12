@@ -1,10 +1,24 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
+import NotFounds from "./Pages/NotFound/NotFounds";
 
 function App() {
   return (
     <div className="App">
-      <Home></Home>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="*">
+            <NotFounds></NotFounds>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
