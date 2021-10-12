@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "OIL CHANGING",
+    "price": 650,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/FYBkbZR/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "REPAIR CAR",
+    "price": 700,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/0qZNbb5/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "REPLACE TIRE",
+    "price": 200,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/HKsGWMd/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "ENGINE REPAIR",
+    "price": 100,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/f99CymK/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "WHEEL ALIGNMENT",
+    "price": 300,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/6YS3sTg/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": " ENGINE DIAGNOSTIC",
+    "price": 500,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nulla? Asperiores illo, voluptatum voluptatibus reiciendis illum consectetur dolores suscipit aperiam.",
+    "img": "https://i.ibb.co/grKYymp/6.jpg"
+  }
+]

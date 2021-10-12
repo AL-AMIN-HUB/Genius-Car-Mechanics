@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/VVp915w/mechanic-1.jpg",
+    "name": "Andrew Smith",
+    "expertize": "-Engine Expert-"
+  },
+  {
+    "id": 2,
+    "img": " https://i.ibb.co/cFnvRnY/mechanic-2.jpg",
+    "name": "John Anderson",
+    "expertize": "-Polish Expert-"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/4WkG7hP/mechanic-3.jpg",
+    "name": "Zakaria Smith",
+    "expertize": "-Coloring Expert-"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/RDHZ5M9/mechanic-4.jpg",
+    "name": "Sakib Anderson",
+    "expertize": "-Alrounder Expert-"
+  }
+]
