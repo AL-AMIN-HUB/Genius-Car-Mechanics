@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <>
       <Navbar sticky="top" bg="dark" expand="lg">
@@ -20,8 +22,21 @@ const Header = () => {
               <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#experts">
                 Experts
               </NavLink>
+              {user?.email ? (
+                <NavLink to="/login">
+                  <Button onClick={logOut} className="ms-3 btn btn-danger">
+                    {" "}
+                    Logout
+                  </Button>
+                </NavLink>
+              ) : (
+                <NavLink to="/login">
+                  {" "}
+                  <Button className="ms-3 btn btn-danger"> Login</Button>
+                </NavLink>
+              )}
               <NavLink className="fs-4 text-muted text-decoration-none ms-3" to="/login">
-                Login
+                {user?.displayName && <img style={{ width: "40px", borderRadius: "50%" }} src={user?.photoURL} alt="" />}
               </NavLink>
             </Nav>
           </Navbar.Collapse>
