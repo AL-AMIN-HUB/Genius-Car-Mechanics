@@ -7,9 +7,12 @@ initializeAuthentication();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
+
+  const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
 
   const signInGoogle = () => {
+    setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
     //   login method
     signInWithPopup(auth, googleProvider)
@@ -18,7 +21,8 @@ const useFirebase = () => {
       })
       .catch((error) => {
         setError(error.message);
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
 
   //   user state change observed
@@ -29,6 +33,7 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
     // question : Why is the arrow function then unsubscribed return here?
     return () => unsubscribed;
@@ -38,7 +43,10 @@ const useFirebase = () => {
 
   // user log out method
   const logOut = () => {
-    signOut(auth).then(() => {});
+    setIsLoading(true);
+    signOut(auth)
+      .then(() => {})
+      .finally(() => setIsLoading(false));
   };
 
   return {
@@ -46,6 +54,7 @@ const useFirebase = () => {
     error,
     signInGoogle,
     logOut,
+    isLoading,
   };
 };
 
