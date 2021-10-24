@@ -15,15 +15,18 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <HashLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#banner">
+              <HashLink className="fs-5 text-muted text-decoration-none ms-3" to="/home#banner">
                 Home
               </HashLink>
-              <HashLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#services">
+              <HashLink className="fs-5 text-muted text-decoration-none ms-3" to="/home#services">
                 Services
               </HashLink>{" "}
-              <HashLink className="fs-4 text-muted text-decoration-none ms-3" to="/home#experts">
+              <HashLink className="fs-5 text-muted text-decoration-none ms-3" to="/home#experts">
                 Experts
               </HashLink>
+              <NavLink className="fs-5 text-muted text-decoration-none ms-3" to="/addService">
+                Add Service
+              </NavLink>{" "}
               {user?.displayName && <img className="ms-3" style={{ width: "40px", borderRadius: "50%" }} src={user?.photoURL} alt="" />}
               {user?.email ? (
                 <NavLink to="/login">

@@ -7,6 +7,8 @@ import Login from "./Pages/Login/Login/Login";
 import NotFounds from "./Pages/NotFound/NotFounds";
 import AuthProvider from "./contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import AddService from "./Pages/AddServices/AddService";
+import ManageServices from "./Pages/Home/ManageServices/ManageServices";
 
 function App() {
   return (
@@ -26,7 +28,13 @@ function App() {
             </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/addService">
+              <AddService></AddService>
             </Route>{" "}
+            <Route exact path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
             <Route path="*">
               <NotFounds></NotFounds>
             </Route>
