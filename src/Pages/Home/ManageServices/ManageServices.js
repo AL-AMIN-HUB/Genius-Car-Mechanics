@@ -4,14 +4,14 @@ const ManageServices = () => {
   const [services, setService] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://guarded-everglades-47114.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
 
   //   delete
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/services/${id}`;
+    const url = `https://guarded-everglades-47114.herokuapp.com/services/${id}`;
     fetch(url, {
       method: "DELETE",
     })
